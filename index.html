@@ -485,7 +485,7 @@
             </div>
             
             <div class="config-control">
-                <input type="text" id="customModelName" class="config-input" placeholder="输入其他模型名称 (如: gemma3:1b)">
+                <input type="text" id="customModelName" class="config-input" placeholder="输入其他模型名称 (如: deepseek-v3.1:671b-cloud)">
                 <button id="updateModelBtn" class="config-btn">更新模型</button>
             </div>
             
@@ -593,7 +593,7 @@
         
         // 配置变量
         let ollamaConfig = {
-            model: 'deepseek-v3.1:671b-cloud',  // 默认使用gemma3:1b模型
+            model: 'deepseek-v3.1:671b-cloud',  // 默认使用deepseek-v3.1:671b-cloud模型
             serverUrl: 'http://localhost:11434',
             apiPath: '/api/generate'
         };
@@ -1024,7 +1024,7 @@
             return 'en';
         }
         
-        // 翻译文本 - 针对gemma3:1b优化
+        // 翻译文本 - 
         async function translateText(text, sourceLang) {
             // 如果Ollama未连接，使用模拟翻译
             if (!ollamaConnected) {
@@ -1034,7 +1034,7 @@
             const targetLang = sourceLang === 'zh' ? 'en' : 'zh';
             
             try {
-                // 针对gemma3:1b优化的提示词
+                // 优化的提示词
                 const prompt = sourceLang === 'zh' 
                     ? `Translate this Chinese text to English: "${text}"`
                     : `将这段英文翻译成中文: "${text}"`;
