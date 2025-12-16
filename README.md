@@ -10,10 +10,10 @@ html文档内容全部为deepseek输出，支持修改选其他模型
 2、部署使用Node.js的http-serve
 
   **# 1. 安装Node.js（如果未安装）：https://nodejs.org/
-  # 2. 安装http-server
+  **# 2. 安装http-server****
   npm install -g http-server
 
-  # 3. 在项目文件夹中运行
+  **# 3. 在项目文件夹中运行**
   http-server -p 8080 -c-1
 
 3. 浏览器访问 http://localhost:8080
