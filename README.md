@@ -1,0 +1,2 @@
+# Translate_Ollama
+基于Ollama本地大模型的实时翻译网页工具-DS输出代码版
